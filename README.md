@@ -4,7 +4,6 @@
 
 This project demonstrates analysis and visual solution using a messy dataset from the education sector. The objective was to transform this dataset into an optimized schema, develop analytical DAX measures and design a dashboard to deliver insights across various questions.
 
----
 
 ## Part 1: Data Cleaning (Power Query)
 
@@ -15,7 +14,7 @@ The raw dataset was loaded as a flat table and heavily scrubbed in **Power Query
 - **Data Type Corrections:** Converted numerical values stored as text into proper types. Ensured scores, attendance rates and currency values were designated awith their correct data types. (Whole number, Text, Currency)
 - **Geographic Cleaning:** Corrected mismatched sub-county, county and regional hierarchies to create consistency when looking up values.
 
----
+
 
 ## Part 2: Data Modeling 
 
@@ -39,7 +38,7 @@ To optimize report performance and eliminate data repetition, the flat table was
 - **Handling Inactive Relationships:** To map dual geographic relationships (e.g., where a student resides vs. where a school is located) without creating confusion, secondary paths between `DimStudent`/`DimSchool` and `DimLocation` were configured as **Inactive Relationships** (dashed lines) to be called upon safely via DAX `USERELATIONSHIP`.
 - **Duplicate Elimination:** Applied `Remove Duplicates` constraints on all primary keys (`TeacherID`, `SubjectID`, `School Id`) across the dimension tables to protect model integrity.
 
----
+
 
 ## Part 3: All Measures & Calculations (DAX)
 
@@ -89,7 +88,7 @@ Avg Fee Paid = DIVIDE([Total Revenue Collected], [Total Students])
 Teacher Student Ratio = DIVIDE([Total Students], [Total Teachers])
 ```
 
----
+
 
 ## Part 4: Dashboard
 
