@@ -178,7 +178,7 @@ To present the analysis requirements clearly without cluttering the canvas, the 
 ```
 ├── data/              # Raw and cleaned datasets
 ├── pbix/              # Power BI project file
-├── visuals/        # Dashboard preview images
+├── visuals/           # Dashboard preview images
 └── README.md
 ```
 
