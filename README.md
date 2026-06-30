@@ -91,7 +91,7 @@ Teacher Student Ratio = DIVIDE([Total Students], [Total Teachers])
 
 ---
 
-## Part 4: Dashboard Architecture & Mapping
+## Part 4: Dashboard
 
 To present the analysis requirements clearly without cluttering the canvas, the project features a 5-page interactive dashboard mapped out across the 35 business questions.
 
